@@ -1,2 +1,2 @@
 #!/bin/bash
-exec docker run --net host -ti kupyter ipython "$@"
+exec docker run --net host -ti docker-kupyter ipython "$@"

@@ -1,1 +1,1 @@
-docker build -t kupyter .
+docker build -t docker-kupyter .
