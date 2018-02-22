@@ -20,7 +20,8 @@ RUN apt-get -y install locales && locale-gen en_US.UTF-8 && dpkg-reconfigure loc
     && apt-get -y install openssh-server stunnel4 daemon libhdf5-dev \
         lsof iputils-ping socat netcat dnsutils aria2 net-tools \
         socat netrw netcat libxml2-dev libxslt-dev sshfs dropbear-bin \
-        telnet-ssl sqlite3 silversearcher-ag
+        telnet-ssl sqlite3 silversearcher-ag \
+    && apt-get -y install salt-master salt-minion salt-api salt-proxy salt-ssh salt-syndic
 
 RUN apt-get -y install python-tk tightvncserver tmux rxvt \
     xterm mlterm imagemagick firefox blackbox imagemagick \
