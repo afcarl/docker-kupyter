@@ -28,7 +28,7 @@ RUN apt-get -y install python-tk tightvncserver tmux rxvt \
     vim-gtk gnome-terminal i3 chromium-browser
 
 RUN pip install --upgrade setuptools pyzmq msgpack-python \
-        simplejson lxml Pillow olefile redis python-redis-log \
+        simplejson lxml Pillow olefile redis python-redis-log rlog \
     && pip install --upgrade numpy scipy matplotlib scikit-learn scikit-image \
         sklearn-extras imread imageio imread tifffile \
     && pip install --upgrade ipython[all] jupyter h5py pandas reportlab \
