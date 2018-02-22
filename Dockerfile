@@ -33,6 +33,7 @@ RUN pip install --upgrade setuptools pyzmq msgpack-python \
     && pip install --upgrade ipython[all] jupyter h5py pandas reportlab \
         editdistance bokeh
 
+RUN pip install --upgrade jupyterlab && jupyter serverextension enable --py jupyterlab --sys-prefix
 RUN pip install --upgrade dask dask[complete] distributed
 RUN pip install --upgrade google-cloud-storage
 RUN pip install --upgrade youtube-dl
