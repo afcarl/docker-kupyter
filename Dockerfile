@@ -38,6 +38,6 @@ RUN pip install --upgrade dask dask[complete] distributed
 RUN pip install --upgrade google-cloud-storage
 RUN pip install --upgrade youtube-dl
 
-RUN pip install pip install http://download.pytorch.org/whl/cpu/torch-0.3.1-cp27-cp27mu-linux_x86_64.whl
+RUN pip install http://download.pytorch.org/whl/cpu/torch-0.3.1-cp27-cp27mu-linux_x86_64.whl 
 RUN pip install torchvision
 
