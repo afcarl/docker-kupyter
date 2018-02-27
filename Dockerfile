@@ -42,3 +42,5 @@ RUN pip install --upgrade youtube-dl
 RUN pip install http://download.pytorch.org/whl/cpu/torch-0.3.1-cp27-cp27mu-linux_x86_64.whl 
 RUN pip install torchvision
 
+RUN pip install git+git://github.com/tmbdev/redrun
+RUN pip install git+git://github.com/tmbdev/htpar

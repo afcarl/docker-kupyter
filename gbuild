@@ -1,0 +1,4 @@
+#!/bin/bash
+
+tag=gcr.io/research-191823/kupyter
+gcloud container builds submit --tag $tag --timeout=3600 .
