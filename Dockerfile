@@ -41,7 +41,14 @@ RUN pip install --upgrade youtube-dl
 
 RUN pip install http://download.pytorch.org/whl/cpu/torch-0.3.1-cp27-cp27mu-linux_x86_64.whl 
 RUN pip install torchvision
-RUN apt-get install -y redis-tools netcat-openbsd
+# RUN apt-get install -y netcat-openbsd
+RUN apt-get install -y netcat-traditional
+RUN apt-get install -y redis-tools
+RUN apt-get install -y webfs
+RUN apt-get install -y iperf3 iozone3
 
 RUN pip install git+git://github.com/tmbdev/redrun
 RUN pip install git+git://github.com/tmbdev/htpar
+RUN pip install git+git://github.com/NVLabs/dlinputs
+RUN pip install git+git://github.com/NVLabs/dltrainers
+RUN pip install git+git://github.com/NVLabs/dlmodels
